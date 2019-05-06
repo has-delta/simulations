@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/has-delta/simulations#readme",
   "devDependencies": {
+    "@types/material-ui": "^0.21.6",
     "gh-pages": "^2.0.1",
     "parcel": "^1.12.3",
     "typescript": "^3.4.5"
