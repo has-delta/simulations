@@ -1,0 +1,29 @@
+{
+  "name": "simulations",
+  "version": "1.0.0",
+  "description": "Physics simulations by Project Delta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/has-delta/simulations.git"
+  },
+  "keywords": [
+    "physics",
+    "physics-simulation",
+    "matter-js",
+    "typescript",
+    "web",
+    "hana-academy-seoul",
+    "has-delta",
+    "website"
+  ],
+  "author": "Project Delta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/has-delta/simulations/issues"
+  },
+  "homepage": "https://github.com/has-delta/simulations#readme"
+}
