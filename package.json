@@ -4,6 +4,9 @@
   "description": "Physics simulations by Project Delta",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/parcel index.html",
+    "build": "./node_modules/.bin/parcel build index.html --public-url .",
+    "deploy": "npm run-script build && ./node_modules/.bin/gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
