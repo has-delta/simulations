@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet"
           href="/node_modules/material-components-web/dist/material-components-web.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -11,55 +10,53 @@
     </script>
     <title>Project Delta</title>
     <style>
-        body {
-            display: flex;
-            height: 100vh;
-        }
+      body {
+        display: flex;
+        height: 100vh;
+      }
 
-        .mdc-drawer-app-content {
-            flex: auto;
-            overflow: auto;
-            position: relative;
-        }
+      .mdc-drawer-app-content {
+        flex: auto;
+        overflow: auto;
+        position: relative;
+      }
 
-        .main-content {
-            overflow: auto;
-            height: 100%;
-        }
+      .main-content {
+        overflow: auto;
+        height: 100%;
+      }
 
-        .app-bar {
-            position: absolute;
-        }
+      .app-bar {
+        position: absolute;
+      }
 
-        .mdc-top-app-bar {
-            z-index: 7;
-        }
+      .mdc-top-app-bar {
+        z-index: 7;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="mdc-top-app-bar app-bar" id="app-bar">
-        <div class="mdc-top-app-bar__row">
-            <section class="mdc-top-app-bar__section
-                            mdc-top-app-bar__section--align-start">
-                <a class="demo-menu material-icons mdc-top-app-bar__navigation-icon"
-                   href="#">menu</a>
-                <span class="mdc-top-app-bar__title">Project Delta</span>
-            </section>
-        </div>
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a class="demo-menu material-icons mdc-top-app-bar__navigation-icon" href="#">menu</a>
+          <span class="mdc-top-app-bar__title">Project Delta</span>
+        </section>
+      </div>
     </header>
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
-        <div class="mdc-drawer__content">
-            <nav class="mdc-list">
-                <a class="mdc-list-item" href="#" aria-current="page">1</a>
-                <a class="mdc-list-item" href="#" aria-current="page">2</a>
-            </nav>
-        </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a class="mdc-list-item" href="#" aria-current="page">1</a>
+          <a class="mdc-list-item" href="#" aria-current="page">2</a>
+        </nav>
+      </div>
     </aside>
     <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
-        <main class="main-content" id="main-content">
-            Hello, world!
-        </main>
+      <main class="main-content" id="main-content">
+        Hello, world!
+      </main>
     </div>
     <script src="index.ts"></script>
-</body>
+  </body>
 </html>
