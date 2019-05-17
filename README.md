@@ -1,20 +1,13 @@
 # simulations
 Physics simulations by Project Delta
 
-# Roadmap
+## Roadmap
 
-## Vectors
-
-## Kinematics
-
-## Newton's Laws
-
-## Work, Energy, and Power
-
-## Linear Momentum
-
-## Rotational Motion
-
-## Laws of Gravitation
-
-## Oscillations
+- [ ] Vectors
+- [ ] Kinematics
+- [ ] Newton's Laws
+- [ ] Work, Energy, and Power
+- [ ] Linear Momentum
+- [ ] Rotational Motion
+- [ ] Laws of Gravitation
+- [ ] Oscillations
