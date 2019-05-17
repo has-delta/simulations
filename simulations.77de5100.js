@@ -4892,7 +4892,25 @@ topAppBar.setScrollTarget(document.getElementById('main-content'));
 topAppBar.listen('MDCTopAppBar:nav', function () {
   drawer.open = !drawer.open;
 });
-},{"@material/drawer":"node_modules/@material/drawer/index.js","@material/top-app-bar":"node_modules/@material/top-app-bar/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var indexUrl = 'https://raw.githubusercontent.com/has-delta/simulation-data/master/index.json';
+fetch(indexUrl).then(function (res) {
+  return res.json();
+}).then(function (data) {
+  var topics = data.topics;
+  console.log(topics);
+  var drawerElem = document.getElementById('drawer');
+
+  for (var _i = 0, topics_1 = topics; _i < topics_1.length; _i++) {
+    var topic = topics_1[_i];
+    var topicElem = document.createElement('a');
+    topicElem.setAttribute('class', 'mdc-list-item');
+    topicElem.setAttribute('href', '#');
+    topicElem.setAttribute('aria-current', 'page');
+    topicElem.text = topic.desc.ko;
+    drawerElem.appendChild(topicElem);
+  }
+});
+},{"@material/drawer":"node_modules/@material/drawer/index.js","@material/top-app-bar":"node_modules/@material/top-app-bar/index.js"}],"../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -4920,7 +4938,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40053" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42351" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -5095,5 +5113,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","index.ts"], null)
+},{}]},{},["../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.ts"], null)
 //# sourceMappingURL=/simulations.77de5100.js.map
